@@ -2,6 +2,10 @@
 
 Hi! This guide will walk you through setting up everything you need to start working on this project. Don't worry if you've never done anything like this before -- just follow each step exactly and you'll be up and running.
 
+> **Are you on a Windows PC or a Mac?** This guide covers both! Whenever a step is different depending on your computer, you'll see a **Windows** section and a **Mac** section. Just follow the one that matches your computer.
+>
+> **Not sure which you have?** If your keyboard has a key with the Windows logo (looks like a four-pane window), you're on Windows. If your keyboard has a key that says **&#x2318; (Command)** with an apple-like symbol, you're on a Mac.
+
 **What we're going to do:**
 1. Create a GitHub account (where the code lives online)
 2. Install GitHub Desktop (an app to download and sync code)
@@ -18,7 +22,7 @@ Let's go!
 
 GitHub is like Google Drive but for code. It stores the project online so multiple people can work on it.
 
-1. Open your web browser (Chrome, Edge, Firefox -- any is fine)
+1. Open your web browser (Chrome, Safari, Edge, Firefox -- any is fine)
 
 2. Go to: **https://github.com/signup**
 
@@ -49,26 +53,32 @@ GitHub Desktop is an app that lives on your computer. It lets you download code 
 
 1. Go to: **https://desktop.github.com**
 
-2. You'll see a big page with a purple/blue button that says **"Download for Windows"** (or Mac if you're on a Mac)
+2. You'll see a big page with a purple/blue download button.
 
-3. Click that button. A file will download (it's called something like `GitHubDesktopSetup-x64.exe`)
+   - **Windows:** It will say **"Download for Windows"**
+   - **Mac:** It will say **"Download for macOS"**
 
-4. **Find the downloaded file:**
-   - Look at the bottom of your browser -- there's usually a downloads bar
-   - Or press **Ctrl + J** to open your downloads list
-   - Click on the file to open it
+   Click that button.
 
-5. The installer will run. You don't need to do anything -- it installs automatically. Wait for it to finish.
+3. **Find the downloaded file:**
 
-6. GitHub Desktop will open automatically. You'll see a **"Welcome to GitHub Desktop"** screen
+   - **Windows:** Look at the bottom of your browser for a downloads bar, or press **Ctrl + J** to open your downloads. The file is called something like `GitHubDesktopSetup-x64.exe`. Click on it to open it.
+   - **Mac:** Look in your **Downloads** folder (click the smiley face icon in your dock, then click **Downloads** in the left sidebar). The file is called something like `GitHubDesktop-arm64.dmg`. Double-click it. A window will pop up -- drag the GitHub Desktop icon into the **Applications** folder. Then open **Applications** and double-click **GitHub Desktop** to launch it.
 
-7. Click **"Sign in to GitHub.com"**
+4. The installer will run.
 
-8. Your browser will open and ask you to authorize GitHub Desktop. Click the green **"Authorize desktop"** button
+   - **Windows:** It installs automatically. Wait for it to finish.
+   - **Mac:** If macOS asks "Are you sure you want to open it?" click **"Open"**.
 
-9. Your browser might ask "Open GitHub Desktop?" -- click **"Open"** or **"Allow"**
+5. GitHub Desktop will open. You'll see a **"Welcome to GitHub Desktop"** screen.
 
-10. You'll be back in GitHub Desktop, now signed in. You should see your username in the top-left area.
+6. Click **"Sign in to GitHub.com"**
+
+7. Your browser will open and ask you to authorize GitHub Desktop. Click the green **"Authorize desktop"** button.
+
+8. Your browser might ask "Open GitHub Desktop?" -- click **"Open"** or **"Allow"**.
+
+9. You'll be back in GitHub Desktop, now signed in. You should see your username in the top-left area.
 
 ---
 
@@ -88,12 +98,14 @@ GitHub Desktop is an app that lives on your computer. It lets you download code 
    ```
    https://github.com/ultrafro/nebia
    ```
-   To paste: click inside the text box, then press **Ctrl + V**
+   To paste:
+   - **Windows:** Click inside the text box, then press **Ctrl + V**
+   - **Mac:** Click inside the text box, then press **Cmd + V** (the &#x2318; key + V)
 
-6. In the second text box ("Local path"), it shows where the project will be saved on your computer. The default is usually fine, but **write down or remember this path!** You'll need it later. It will be something like:
-   ```
-   C:\Users\YourName\Documents\GitHub\nebia
-   ```
+6. In the second text box ("Local path"), it shows where the project will be saved on your computer. The default is usually fine, but **write down or remember this path!** You'll need it later.
+
+   - **Windows:** It will be something like `C:\Users\YourName\Documents\GitHub\nebia`
+   - **Mac:** It will be something like `/Users/YourName/Documents/GitHub/nebia`
 
 7. Click the blue **"Clone"** button
 
@@ -113,11 +125,18 @@ Node.js is the engine that actually runs this project. Without it, nothing will 
 
 2. You'll see two big green buttons. Click the one on the **LEFT** that says **"LTS"** (it stands for "Long Term Support" -- it's the stable, recommended version). It will say something like "22.x.x LTS - Recommended For Most Users"
 
-3. A file will download (something like `node-v22.x.x-x64.msi`)
+3. A file will download.
+   - **Windows:** It's called something like `node-v22.x.x-x64.msi`
+   - **Mac:** It's called something like `node-v22.x.x.pkg`
 
-4. Find and open the downloaded file (check the bottom of your browser or press **Ctrl + J**)
+4. Find and open the downloaded file.
+   - **Windows:** Check the bottom of your browser or press **Ctrl + J**
+   - **Mac:** Check your **Downloads** folder or press **Cmd + J** in your browser
 
-5. The Node.js Setup Wizard will open. Follow these steps:
+5. **Run the installer:**
+
+   **On Windows:**
+   - The Node.js Setup Wizard will open
    - Click **"Next"**
    - Check the box to accept the license agreement, click **"Next"**
    - Leave the install location as default, click **"Next"**
@@ -128,11 +147,28 @@ Node.js is the engine that actually runs this project. Without it, nothing will 
    - Wait for it to install
    - Click **"Finish"**
 
+   **On Mac:**
+   - The Node.js installer will open
+   - Click **"Continue"** through the intro screens
+   - Click **"Agree"** to accept the license
+   - Click **"Install"**
+   - Enter your Mac password (the one you use to log in to your computer) when it asks
+   - Wait for it to install
+   - Click **"Close"**
+
 6. **Now let's verify it worked.** We need to open a terminal (a text-based window where you can type commands):
+
+   **On Windows:**
    - Press the **Windows key** on your keyboard (the key with the Windows logo, usually between Ctrl and Alt)
    - Type **`cmd`**
    - You'll see **"Command Prompt"** appear in the search results. Click on it.
    - A black window will open with white text and a blinking cursor
+
+   **On Mac:**
+   - Press **Cmd + Space** on your keyboard (this opens Spotlight search)
+   - Type **`Terminal`**
+   - Press **Enter** or click on **"Terminal"** in the results
+   - A window will open with a text prompt and a blinking cursor
 
 7. Type this exactly and press **Enter**:
    ```
@@ -149,12 +185,12 @@ Node.js is the engine that actually runs this project. Without it, nothing will 
 10. You should see another version number like `10.9.2`. **If you see this, npm (Node Package Manager) is also working!**
 
 **If you got errors instead of version numbers:**
-- Close the Command Prompt window completely
+- Close the terminal window completely
 - Open a brand new one (repeat step 6)
 - Try again. The terminal needs to be reopened after installing new programs.
 - If it still doesn't work, restart your computer and try again.
 
-You can close the Command Prompt for now.
+You can close the terminal for now.
 
 ---
 
@@ -162,54 +198,22 @@ You can close the Command Prompt for now.
 
 Claude Code is an AI assistant that lives in your terminal. You'll type instructions to it in plain English (like "add a button that makes the character jump higher") and it will write and run the code for you.
 
-### 5a: Get an API Key
+### 5a: Install Claude Code
 
-Before installing, you need an API key (like a password that lets Claude Code talk to the AI).
-
-1. Go to: **https://console.anthropic.com**
-
-2. Click **"Sign up"** and create an account (you can use your Google account to make it quick)
-
-3. Once you're logged in, you need to add billing:
-   - Look for **"Billing"** or **"Plans"** in the left sidebar
-   - Add a payment method (credit card)
-   - You can start with a small amount like $5 -- this will last a while
-
-4. Now get your API key:
-   - Look for **"API Keys"** in the left sidebar
-   - Click **"Create Key"**
-   - Give it a name like "claude-code" (the name doesn't matter)
-   - Click **"Create Key"**
-   - **IMPORTANT: Copy the key right now!** It starts with `sk-ant-` and is very long. Click the copy button next to it.
-   - **Save it somewhere safe** (paste it into a text file or notes app). You won't be able to see it again after you close this page.
-
-### 5b: Save the API Key to Your Computer
-
-We need to save this key so Claude Code can find it every time.
-
-1. Press the **Windows key** on your keyboard
-2. Type **`environment`**
-3. Click on **"Edit the system environment variables"**
-4. A "System Properties" window opens. Click the **"Environment Variables..."** button at the bottom
-5. In the **top section** (User variables), click **"New..."**
-6. Fill in:
-   - **Variable name:** `ANTHROPIC_API_KEY`
-   - **Variable value:** paste your API key (the long `sk-ant-...` string)
-7. Click **OK**
-8. Click **OK** again
-9. Click **OK** one more time to close everything
-
-### 5c: Install Claude Code
-
-1. Open a **new** Command Prompt (important -- it must be new so it picks up the API key):
-   - Press the **Windows key**
-   - Type **`cmd`**
-   - Click **"Command Prompt"**
+1. Open a terminal:
+   - **Windows:** Press the **Windows key**, type **`cmd`**, click **"Command Prompt"**
+   - **Mac:** Press **Cmd + Space**, type **Terminal**, press **Enter**
 
 2. Type this and press **Enter**:
    ```
    npm install -g @anthropic-ai/claude-code
    ```
+
+   **Mac note:** If you get a "permission denied" error, try this instead:
+   ```
+   sudo npm install -g @anthropic-ai/claude-code
+   ```
+   It will ask for your Mac password. Type it in (you won't see the characters as you type -- that's normal!) and press **Enter**.
 
 3. Wait for it to finish. You'll see a lot of text scrolling. This is normal. It might take a minute or two.
 
@@ -221,22 +225,43 @@ We need to save this key so Claude Code can find it every time.
    ```
    You should see a version number.
 
+### 5b: Sign In to Claude Code
+
+The first time you run Claude Code, it will ask you to sign in through your browser. This is free and easy!
+
+1. In the same terminal, type:
+   ```
+   claude
+   ```
+
+2. Claude Code will show a message saying it needs to authenticate, and it will **automatically open your web browser** to a sign-in page.
+
+   - If the browser doesn't open automatically, it will show you a URL. Copy that URL and paste it into your browser's address bar.
+
+3. In your browser, you'll see a page asking you to sign in to your **Anthropic account**:
+   - If you already have one, sign in
+   - If you don't, click **"Sign up"** and create an account (you can use your Google account to make it quick)
+
+4. After signing in, the browser will show a confirmation page saying you're authenticated. You can close this browser tab.
+
+5. Go back to your terminal -- Claude Code should now be working! You'll see a chat-like interface where you can type messages.
+
+6. For now, type `/exit` and press **Enter** to close Claude Code. We'll start it properly in Step 7.
+
 ---
 
 ## Step 6: Install Codex (Optional)
 
 Codex is another AI coding tool, this one from OpenAI. This step is optional -- you can skip it if you want and come back later.
 
-1. Go to: **https://platform.openai.com/api-keys**
-2. Create an OpenAI account if you don't have one, and add billing
-3. Click **"Create new secret key"**, copy it (starts with `sk-`)
-4. Save the key as an environment variable (same process as Step 5b):
-   - Variable name: `OPENAI_API_KEY`
-   - Variable value: your OpenAI key
-5. Open a **new** Command Prompt and run:
+1. Open a terminal:
+   - **Windows:** Press the **Windows key**, type **`cmd`**, click **"Command Prompt"**
+   - **Mac:** Press **Cmd + Space**, type **Terminal**, press **Enter**
+2. Run:
    ```
    npm install -g @openai/codex
    ```
+3. The first time you run `codex`, it will ask you to sign in -- follow the prompts similar to Claude Code.
 
 ---
 
@@ -244,20 +269,24 @@ Codex is another AI coding tool, this one from OpenAI. This step is optional -- 
 
 This is the exciting part! Let's start everything up.
 
-1. Open a **new** Command Prompt:
-   - Press the **Windows key**
-   - Type **`cmd`**
-   - Click **"Command Prompt"**
+1. Open a **new** terminal:
+   - **Windows:** Press the **Windows key**, type **`cmd`**, click **"Command Prompt"**
+   - **Mac:** Press **Cmd + Space**, type **Terminal**, press **Enter**
 
-2. Navigate to the project folder. Type this command and press **Enter** (replace the path with wherever GitHub Desktop saved the project in Step 3):
+2. Navigate to the project folder. Type this command and press **Enter**:
+
+   **Windows** (replace `YourName` with your actual Windows username):
    ```
    cd C:\Users\YourName\Documents\GitHub\nebia
    ```
 
-   **How to find the right path if you forgot:**
-   - Open GitHub Desktop
-   - Right-click on the repository name at the top-left
-   - Click **"Open in Command Prompt"** or **"Open in Terminal"** -- this opens a terminal already in the right folder! If you do this, skip to step 3.
+   **Mac** (replace `YourName` with your actual Mac username):
+   ```
+   cd /Users/YourName/Documents/GitHub/nebia
+   ```
+
+   > **Shortcut -- if you forgot the path:**
+   > Open GitHub Desktop, look at the top menu bar, click **Repository**, then click **"Open in Command Prompt"** (Windows) or **"Open in Terminal"** (Mac). This opens a terminal already in the right folder! If you do this, skip to step 3.
 
 3. Now start Claude Code. Type this and press **Enter**:
    ```
@@ -268,7 +297,10 @@ This is the exciting part! Let's start everything up.
 
 4. Claude Code will start up. You'll see its interface in the terminal -- it looks like a chat where you can type messages.
 
-5. **Paste this as your first message** (copy the entire text below, click inside the Claude Code prompt area, and press **Ctrl + V**, then press **Enter**):
+5. **Paste this as your first message** and press **Enter**:
+
+   - **Windows:** Click inside the Claude Code prompt, press **Ctrl + V** to paste
+   - **Mac:** Click inside the Claude Code prompt, press **Cmd + V** to paste
 
    ```
    Install the project dependencies by running `npm install`, then start the dev server with `npm run dev`. Once the server is running, keep it running and await my instructions. If anything fails, read the error and try to fix it. Let me know when the server is up and ready at localhost:3000.
@@ -282,7 +314,7 @@ This is the exciting part! Let's start everything up.
 
 ## Step 8: See It In Your Browser!
 
-1. Open your web browser (Chrome, Edge, Firefox, etc.)
+1. Open your web browser (Chrome, Safari, Edge, Firefox, etc.)
 
 2. Click on the address bar at the top (where it shows the URL of websites)
 
@@ -318,32 +350,41 @@ Here are solutions to common problems you might run into.
 ### "I can't see anything at localhost:3000"
 
 - **Is the server running?** Look at your terminal where Claude Code is running. If you see `Ready on http://localhost:3000`, the server is running. If you don't see that, ask Claude: `"start the dev server with npm run dev"`
-- **Try refreshing the page.** Press **Ctrl + R** in your browser, or press **F5**
+- **Try refreshing the page.**
+  - **Windows:** Press **Ctrl + R** or **F5**
+  - **Mac:** Press **Cmd + R**
 - **Try the other URL.** Sometimes `localhost` doesn't work. Try typing `127.0.0.1:3000` in the address bar instead. It's the same thing, just written differently.
-- **Did you close the terminal?** If you close the Command Prompt window where the server was running, the server stops. You'll need to start Claude Code again (go back to Step 7).
+- **Did you close the terminal?** If you close the terminal window where the server was running, the server stops. You'll need to start Claude Code again (go back to Step 7).
 
 ### "The page looks broken or has weird styling"
 
-- Press **Ctrl + Shift + R** in your browser. This does a "hard refresh" that clears cached files.
+- Do a hard refresh:
+  - **Windows:** Press **Ctrl + Shift + R**
+  - **Mac:** Press **Cmd + Shift + R**
 - If that doesn't work, tell Claude: `"delete the .next folder and restart the dev server"`
 
-### "npm is not recognized" or "node is not recognized"
+### "npm is not recognized" / "npm: command not found"
 
 - Node.js isn't installed correctly. Go back to **Step 4** and reinstall it.
-- **Make sure to close and reopen your Command Prompt** after installing. Old terminal windows don't know about newly installed programs.
+- **Make sure to close and reopen your terminal** after installing. Old terminal windows don't know about newly installed programs.
 - If it still doesn't work after reopening, **restart your computer** and try again.
 
-### "claude is not recognized"
+### "claude is not recognized" / "claude: command not found"
 
 - Claude Code isn't installed. Go back to **Step 5c**.
-- Make sure to close and reopen your Command Prompt after installing.
+- Make sure to close and reopen your terminal after installing.
+- **Mac only:** If you used `sudo` to install but it still says command not found, try running:
+  ```
+  npx @anthropic-ai/claude-code --dangerously-skip-permissions
+  ```
+  This runs Claude Code directly without needing it installed globally.
 
-### Claude Code says "API key not found" or "authentication failed"
+### Claude Code says "not authenticated" or "authentication failed"
 
-- Your API key isn't set up. Go back to **Step 5b** and add the environment variable.
-- **You must open a new Command Prompt** after setting environment variables. Old windows don't see the change.
-- Double-check that you spelled the variable name exactly: `ANTHROPIC_API_KEY`
-- Make sure the key you pasted is complete -- it should be a long string starting with `sk-ant-`
+- You need to sign in. Run `claude` in your terminal and follow the browser sign-in prompts (see Step 5b).
+- If the browser sign-in page doesn't open, check your internet connection.
+- If you signed in but it still doesn't work, try running `claude` again -- sometimes you just need to retry.
+- Make sure you're signing in with the correct account (the one you created at console.anthropic.com).
 
 ### "Port 3000 is already in use"
 
@@ -352,9 +393,18 @@ Here are solutions to common problems you might run into.
 
 ### Claude Code seems frozen or stuck
 
-- Press **Ctrl + C** on your keyboard. This interrupts whatever it's doing. Then you can type a new instruction.
+- Press **Ctrl + C** on your keyboard (same on both Windows and Mac). This interrupts whatever it's doing. Then you can type a new instruction.
 - If that doesn't work, press **Ctrl + C** multiple times.
-- If it's completely frozen, just close the Command Prompt window (click the X), open a new one, navigate to the project folder, and run `claude --dangerously-skip-permissions` again.
+- If it's completely frozen, just close the terminal window (click the X or the red circle), open a new one, navigate to the project folder, and run `claude --dangerously-skip-permissions` again.
+
+### "Permission denied" errors (Mac)
+
+- If you see "permission denied" when running a command, try putting `sudo` in front of it. For example:
+  ```
+  sudo npm install -g @anthropic-ai/claude-code
+  ```
+- `sudo` stands for "super user do" -- it runs the command as an administrator.
+- It will ask for your Mac password. Type it in (you won't see the characters -- that's normal!) and press **Enter**.
 
 ### "I made a mistake and broke something"
 
@@ -373,17 +423,21 @@ Here are solutions to common problems you might run into.
 
 ## Quick Reference Card
 
-| I want to...                        | Do this                                                                 |
-|--------------------------------------|-------------------------------------------------------------------------|
-| Open the project                     | Open GitHub Desktop, make sure "nebia" is selected                     |
-| Start coding with AI                 | Open Command Prompt, `cd` to the folder, run `claude --dangerously-skip-permissions` |
-| See the app in my browser            | Go to `localhost:3000`                                                  |
-| Refresh the page                     | Press **Ctrl + R** or **F5** in the browser                            |
-| Stop the server                      | Press **Ctrl + C** in the terminal                                     |
-| Stop Claude Code                     | Type `/exit` or press **Ctrl + C** a few times                         |
-| Undo a change                        | In GitHub Desktop, right-click the file > **Discard changes**          |
-| Save my work                         | In GitHub Desktop: write a summary, click **Commit**, then **Push**    |
-| Pull the latest code from the team   | In GitHub Desktop: click **Fetch origin**, then **Pull origin**        |
+| I want to...                        | Windows                                                | Mac                                                   |
+|--------------------------------------|--------------------------------------------------------|-------------------------------------------------------|
+| Open a terminal                      | Windows key, type `cmd`, Enter                         | Cmd + Space, type `Terminal`, Enter                   |
+| Go to the project folder             | `cd C:\Users\You\Documents\GitHub\nebia`               | `cd /Users/You/Documents/GitHub/nebia`                |
+| Start Claude Code                    | `claude --dangerously-skip-permissions`                | `claude --dangerously-skip-permissions`               |
+| See the app in browser               | Go to `localhost:3000`                                 | Go to `localhost:3000`                                |
+| Refresh the page                     | **Ctrl + R** or **F5**                                 | **Cmd + R**                                           |
+| Hard refresh (clear cache)           | **Ctrl + Shift + R**                                   | **Cmd + Shift + R**                                   |
+| Stop the server                      | **Ctrl + C** in terminal                               | **Ctrl + C** in terminal                              |
+| Stop Claude Code                     | Type `/exit` or **Ctrl + C** a few times               | Type `/exit` or **Ctrl + C** a few times              |
+| Copy text                            | **Ctrl + C**                                           | **Cmd + C**                                           |
+| Paste text                           | **Ctrl + V**                                           | **Cmd + V**                                           |
+| Undo a change                        | GitHub Desktop: right-click file > **Discard changes** | GitHub Desktop: right-click file > **Discard changes**|
+| Save my work                         | GitHub Desktop: commit + push                          | GitHub Desktop: commit + push                         |
+| Pull latest code                     | GitHub Desktop: **Fetch origin** > **Pull origin**     | GitHub Desktop: **Fetch origin** > **Pull origin**    |
 
 ---
 
@@ -392,21 +446,30 @@ Here are solutions to common problems you might run into.
 Here's what a typical work session looks like:
 
 1. **Open GitHub Desktop** and click **"Fetch origin"** then **"Pull origin"** to get the latest code
-2. **Open Command Prompt** and navigate to the project:
-   ```
-   cd C:\Users\YourName\Documents\GitHub\nebia
-   ```
-3. **Start Claude Code:**
+
+2. **Open a terminal:**
+   - **Windows:** Press the **Windows key**, type **`cmd`**, press **Enter**
+   - **Mac:** Press **Cmd + Space**, type **Terminal**, press **Enter**
+
+3. **Go to the project folder:**
+   - **Windows:** `cd C:\Users\YourName\Documents\GitHub\nebia`
+   - **Mac:** `cd /Users/YourName/Documents/GitHub/nebia`
+
+4. **Start Claude Code:**
    ```
    claude --dangerously-skip-permissions
    ```
-4. **Paste the startup prompt:**
+
+5. **Paste the startup prompt:**
    ```
    Start the dev server with `npm run dev` and await my instructions.
    ```
-5. **Open your browser** to `localhost:3000`
-6. **Tell Claude what to build** in plain English!
-7. **When you're done**, save your work in GitHub Desktop (commit + push)
+
+6. **Open your browser** to `localhost:3000`
+
+7. **Tell Claude what to build** in plain English!
+
+8. **When you're done**, save your work in GitHub Desktop (commit + push)
 
 ---
 
@@ -419,9 +482,9 @@ These are terms you might hear that sound confusing:
 - **Commit:** Saving a snapshot of your changes (like a save point in a game).
 - **Push:** Uploading your commits to GitHub so others can see them.
 - **Pull:** Downloading the latest changes that others have pushed.
-- **Terminal / Command Prompt:** The black window where you type text commands.
+- **Terminal / Command Prompt:** A text-based window where you type commands. On Windows it's called "Command Prompt" (black window). On Mac it's called "Terminal" (white or black window).
 - **localhost:** Your own computer, acting as a server. `localhost:3000` means "the website running on my computer, on port 3000."
 - **npm:** Node Package Manager -- a tool that installs code libraries (dependencies) that the project needs.
 - **Dependencies:** Other people's code that our project uses. Think of them like ingredients in a recipe.
 - **Dev server:** A local server that runs the app on your computer for testing. It's not on the internet -- only you can see it.
-- **API key:** A secret password that lets a program (like Claude Code) access a service (like the Claude AI).
+- **sudo:** A Mac/Linux command that means "run this as an administrator." Used when you need extra permissions.
